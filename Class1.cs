@@ -107,18 +107,6 @@ namespace PoissonAvril
         [EventHandler]
         public void OnUpdate(UpdateEvent ev)
         {
-            Platypus1.Rotation = Quaternion.Euler(0, Platypus1.Rotation.eulerAngles.y + 0.75f, 0);
-            Platypus2.Rotation = Quaternion.Euler(0, Platypus2.Rotation.eulerAngles.y + 0.7f, 0);
-            Platypus3.Rotation = Quaternion.Euler(0, Platypus3.Rotation.eulerAngles.y + 0.76f, 0);
-            Platypus4.Rotation = Quaternion.Euler(0, Platypus4.Rotation.eulerAngles.y + 0.71f, 0);
-            Platypus5.Rotation = Quaternion.Euler(0, Platypus5.Rotation.eulerAngles.y + 0.72f, 0);
-            Platypus6.Rotation = Quaternion.Euler(0, Platypus6.Rotation.eulerAngles.y + 0.75f, 0);
-            Platypus7.Rotation = Quaternion.Euler(0, Platypus7.Rotation.eulerAngles.y + 0.73f, 0);
-            Platypus8.Rotation = Quaternion.Euler(0, Platypus8.Rotation.eulerAngles.y + 0.77f, 0);
-            Platypus9.Rotation = Quaternion.Euler(0, Platypus9.Rotation.eulerAngles.y + 0.5f, 0);
-            Platypus10.Rotation = Quaternion.Euler(0, Platypus10.Rotation.eulerAngles.y + 0.85f, 0);
-            Platypus11.Rotation = Quaternion.Euler(0, Platypus11.Rotation.eulerAngles.y + 0.74f, 0);
-
             moaiPlayer.GiveEffect(Synapse3.SynapseModule.Enums.Effect.Invisible);
             moaiPlayer.GiveEffect(Synapse3.SynapseModule.Enums.Effect.Invigorated);
             Moai.Position = moaiPlayer.Position + new Vector3(0, 0.25f, 0);
@@ -143,6 +131,7 @@ namespace PoissonAvril
                 }
             }
         }
+
         [EventHandler]
         public void OnDeath(DeathEvent ev)
         {
